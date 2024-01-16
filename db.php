@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 $conn = mysqli_connect(
     'localhost',
     'root',
@@ -7,4 +7,9 @@ $conn = mysqli_connect(
     'soapsc_db'
 );
 
+if (isset($conn)) {
+    //echo "Conectado";
+}else{
+    //echo "Null";
+}
 ?>
